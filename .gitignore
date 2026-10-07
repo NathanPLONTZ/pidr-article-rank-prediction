@@ -1,0 +1,79 @@
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+*.venv
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and local databases
+*.log
+*.sqlite3
+*.db
+
+# Pytest / mypy / coverage
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.cover
+
+# IDE-specific settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# Secrets and local configuration
+.env
+*.pem
+*.key
+
+# ---------------------------------------------------------------------------
+# Project data. None of this is redistributed: the corpus is rebuilt from the
+# arXiv API, the CORE portal and DBLP by running the pipeline (see README).
+# ---------------------------------------------------------------------------
+
+# Downloaded arXiv PDFs (~10 GB)
+data/pdf/
+
+# Reference datasets downloaded from the CORE portal
+data/CORE2023.csv
+data/CORE_journals.csv
+
+# Everything else produced by the pipeline
+data/
+*.xlsx
+
+# Generated analysis artefacts
+articles.json
+pdf_analysis*.json
+matched_results.*
+*.joblib
+*.pkl
+
+# Generated figures
+figures/
+*.png
+
+# Local LLM experiment outputs
+llm_*.txt
